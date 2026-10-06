@@ -86,7 +86,32 @@ test.describe('Shopping cart tests', () => {
 
         });
 
-        test.fixme('CART-04 The cart counter updates when a product is removed from the cart', async ({ page }) => { });
+        test('CART-04 The cart counter updates when a product is removed from the cart', async ({ page }) => {
+            // Precondiciones: Agregar dos productos al carrito de compras
+            // Verificar que el carrito de compras esté vacío
+            await expect(page.getByTestId('shopping-cart-badge')).not.toBeVisible();
+
+            //Pasos
+            // Agregar el producto "Sauce Labs Backpack" al carrito de compras
+            await page.getByTestId('add-to-cart-sauce-labs-backpack').click();
+            // Agregar el producto "Sauce Labs Bike Light" al carrito de compras
+            await page.getByTestId('add-to-cart-sauce-labs-bike-light').click();
+            // Hacer clic en el ícono del carrito de compras para ir a la página del carrito
+            await page.getByTestId('shopping-cart-link').click();
+            //Validar que estamos en el carrito de compras
+            await expect(page).toHaveURL('https://www.saucedemo.com/cart.html');
+            await expect(page.getByTestId('title')).toContainText('Your Cart');
+
+            // Verificar que el contador del carrito de compras muestre "2" indicando que hay dos productos agregados
+            await expect(page.getByTestId('shopping-cart-badge')).toHaveText('2');
+            // Hacer clic en el botón "Remove" del producto "Sauce Labs Backpack" para eliminarlo del carrito
+            await page.getByTestId('remove-sauce-labs-backpack').click();
+
+            // Aserciones
+            // Verificar que el contador del carrito de compras muestre "1" indicando que hay un producto agregado
+            await expect(page.getByTestId('shopping-cart-badge')).toHaveText('1');
+
+        });
 
         test.fixme('CART-05 The cart retains its contents when returning to inventory', async ({ page }) => { });
     }

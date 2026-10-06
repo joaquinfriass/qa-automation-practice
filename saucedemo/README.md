@@ -1,3 +1,3 @@
-# Compra web: UI
+# Web shopping: UI
 
-Hilo H3. Pruebas de SauceDemo con Playwright y Selenium con Java.
+Thread H3. Tests for SauceDemo using Playwright and Selenium with Java.

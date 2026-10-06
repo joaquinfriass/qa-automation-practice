@@ -1,3 +1,3 @@
-# Reservas: API
+# Bookings: API
 
-Hilo H2. Pruebas de la API de Restful-Booker con Postman, Playwright y Rest Assured.
+Thread H2. Tests for the Restful-Booker API using Postman, Playwright and Rest Assured.

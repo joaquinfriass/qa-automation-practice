@@ -1,35 +1,35 @@
-# DevTools for QA
+# DevTools para QA
 
-Date: 2026-10-06
-Type: study notes
-Source: "DevTools para QA" guide from Material QA
+Fecha: 06/10/2026
+Tipo: notas de estudio
+Fuente: guía "DevTools para QA" del Material QA
 
-The notes were written by Joaquín in Spanish and translated to English with AI assistance. The corrections at the end were added by Claude.
+Las notas son de Joaquín. Las correcciones y aclaraciones del final son de Claude.
 
-## What they are and why they matter
+## Qué son y para qué sirven
 
-- DevTools are developer tools built into every browser. They let you look "inside" a web page: its HTML, errors, API calls, cookies, and more.
-- They are useful for a QA because they turn "the button doesn't work" into "the button calls the API and it returns a 500", so bug reports are much more precise.
-- Anything changed in the page is local: nothing in the real system breaks.
+- Las DevTools son herramientas para desarrolladores que vienen incluidas en todos los navegadores. Permiten ver "por dentro" una página web: su código HTML, los errores, las llamadas a las APIs, las cookies, etc.
+- Le sirven a un QA porque permiten pasar de "el botón no anda" a "el botón llama a la API y devuelve 500", y así los reportes son mucho más precisos.
+- Todo lo que se cambia en la página es local: no se rompe nada del sistema real.
 
-## Network tab
+## Pestaña Network
 
-It shows the API calls with Name, Status, Type, Time, Headers, Payload, Preview/Response, among others.
+Muestra las llamadas a las APIs con Name, Status, Type, Time, Headers, Payload, Preview/Response, entre otros.
 
-Key options:
+Opciones clave:
 
-- **Fetch/XHR:** a filter that shows only API calls, without images, CSS, etc.
-- **Preserve Log:** keeps the requests when the page reloads or redirects.
-- **Disable cache:** simulates a user visiting for the first time.
-- **Throttling:** simulates slow connections or no internet. Ideal to test loaders, timeouts and error messages.
-- **Copy as cURL:** copy it and paste it into Postman. It builds the full request so you can keep testing it.
+- **Fetch/XHR:** filtro para ver solo las llamadas a las APIs, sin imágenes, CSS, etc.
+- **Preserve Log:** no borra las requests cuando la página recarga o redirige.
+- **Disable cache:** simula a un usuario que entra por primera vez.
+- **Throttling:** simula conexiones lentas o sin internet. Ideal para probar loaders, timeouts y mensajes de error.
+- **Copy as cURL:** se copia y se puede pegar en Postman. Arma la request completa para seguir probándola.
 
-## QA tip
+## Tip de QA
 
-When you report an API bug, include the endpoint, the method, the status, the body that was sent (Payload) and the response (Response). With that, the development team can reproduce it without asking you anything.
+Cuando reportes un bug de una API, incluí el endpoint, el método, el status, el body enviado (Payload) y la respuesta (Response). Con eso el equipo de desarrollo puede reproducirlo sin preguntarte nada.
 
-## Corrections and clarifications from the mentor
+## Correcciones y aclaraciones del mentor
 
-- Changing the page (HTML, styles) is local. But if you resend a request, or paste it into Postman and run it, it hits the **real server** and can create or delete data. Do it only in test environments.
-- **Copy as cURL** also copies the session cookies and tokens. Never paste it into a public repo or a social network without removing them first.
-- Disable cache only works while DevTools is open. To simulate a truly new user you also need to clear cookies and storage.
+- Cambiar la página (HTML, estilos) es local. Pero si se reenvía una request, o se pega en Postman y se ejecuta, **le pega al servidor real** y puede crear o borrar datos. Hacerlo solo en ambientes de prueba.
+- **Copy as cURL** copia también las cookies y los tokens de la sesión. Nunca se pega en un repo público ni en una red social sin borrarlos antes.
+- Disable cache solo funciona con las DevTools abiertas. Para simular un usuario realmente nuevo también hay que borrar cookies y storage.

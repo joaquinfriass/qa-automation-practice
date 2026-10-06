@@ -1,3 +1,3 @@
-# Web store: UI and API
+# Tienda web: UI y API
 
-Thread H1. Tests for Automation Exercise using Playwright, Postman, Rest Assured and SQL.
+Hilo H1. Pruebas de Automation Exercise con Playwright, Postman, Rest Assured y SQL.

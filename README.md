@@ -1,21 +1,21 @@
 # QA Automation Practice
 
-Daily test automation practice repo by Joaquín Frías, training as a QA Automation Engineer. Every session leaves a commit.
+Repo de práctica diaria de automatización de pruebas de Joaquín Frías, en formación como QA Automation Engineer. Cada sesión deja un commit.
 
-## Practice threads
+## Hilos de práctica
 
-Each thread is an application that gets tested several times, with different tools and at a higher level each time, until it becomes a complete project.
+Cada hilo es una aplicación que se prueba varias veces, con distintas herramientas y cada vez a mayor nivel, hasta formar un proyecto completo.
 
-| Thread | Folder | Application | Tools |
+| Hilo | Carpeta | Aplicación | Herramientas |
 |---|---|---|---|
-| H1 Web store: UI and API | `web-store/` | Automation Exercise | Playwright, Postman, Rest Assured, SQL |
-| H2 Bookings: API | `restful-booker/` | Restful-Booker | Postman, Playwright, Rest Assured |
-| H3 Web shopping: UI | `saucedemo/` | SauceDemo | Playwright, Selenium with Java |
-| H4 Data: SQL | `sql/` | Mirror schema of the store | SQL |
+| H1 Tienda web: UI y API | `web-store/` | Automation Exercise | Playwright, Postman, Rest Assured, SQL |
+| H2 Reservas: API | `restful-booker/` | Restful-Booker | Postman, Playwright, Rest Assured |
+| H3 Compra web: UI | `saucedemo/` | SauceDemo | Playwright, Selenium con Java |
+| H4 Datos: SQL | `sql/` | Esquema espejo de la tienda | SQL |
 
-The `theory/` folder holds exams and study notes, one file per day.
+La carpeta `theory/` guarda los exámenes y las notas de estudio, un archivo por día.
 
-## Practice log
+## Registro de prácticas
 
-| Date | Thread | What I did | Commit |
+| Fecha | Hilo | Qué hice | Commit |
 |---|---|---|---|

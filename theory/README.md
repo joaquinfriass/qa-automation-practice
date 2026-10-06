@@ -1,3 +1,3 @@
-# Theory
+# Teoría
 
-Exams, QA judgment questions and study notes. One file per day, named `YYYY-MM-DD-topic.md`.
+Exámenes, preguntas de criterio de QA y notas de estudio. Un archivo por día, con el nombre `AAAA-MM-DD-tema.md`.

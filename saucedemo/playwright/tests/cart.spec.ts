@@ -39,7 +39,7 @@ test.describe('Shopping cart tests', () => {
                 await page.getByTestId('shopping-cart-link').click();
                 //Validar que estamos en el carrito de compras
                 await expect(page).toHaveURL('https://www.saucedemo.com/cart.html');
-                await expect(page.getByRole('heading', { name: 'Your Cart' })).toBeVisible();   
+                await expect(page.getByTestId('title')).toContainText('Your Cart');
 
 
                 // Aserciones

@@ -67,7 +67,8 @@ Usuario de prueba: `standard_user` (usuario público de la demo, la contraseña 
 
 **Precondiciones**
 - El usuario inició sesión como "standard_user" y está en la página del carrito.
-- El carrito tiene los productos "Sauce Labs Backpack" y "Sauce Labs Bike Light".
+- Agregar los productos "Sauce Labs Backpack" y "Sauce Labs Bike Light" al carrito.
+- Ir a la página del carrito.
 
 **Pasos:**
 

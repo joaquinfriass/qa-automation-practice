@@ -159,6 +159,9 @@ test.describe('Shopping cart tests', () => {
             await expect(page.getByTestId('remove-sauce-labs-bike-light')).toBeVisible();
 
         });
+
+        // CART-06: pendiente. Falta que el PO defina qué debe pasar al recargar la página.
+        test.fixme('CART-06 CART-06 reload the cart page with two products', async ({ page }) => {});
     }
 });
 

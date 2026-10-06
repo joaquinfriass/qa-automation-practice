@@ -18,4 +18,5 @@ La carpeta `theory/` guarda los exámenes y las notas de estudio, un archivo por
 ## Registro de prácticas
 
 | Fecha | Hilo | Qué hice | Commit |
+|---|---|---|---|  
 | 2026-10-06 | H3 | Casos CART-01 a CART-06 y 5 tests de Playwright del carrito de SauceDemo | [1bd8a86](https://github.com/joaquinfriass/qa-automation-practice/commit/1bd8a864eb5053a404411c54031f181fd23be4b4) |

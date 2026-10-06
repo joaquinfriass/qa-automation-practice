@@ -56,7 +56,7 @@ Usuario de prueba: `standard_user` (usuario público de la demo, la contraseña 
 
 - El carrito tiene en su contador dos productos.
 - El carrito muestra el producto "Sauce Labs Backpack" con su precio de "$29.99".
-- El carrito muestra el producto "Sauce Labs Bike Light" con su precio de "$9.99".
+- El carrito muestra el producto "Sauce Labs Bike Light" con su precio de "$9.99"
 
 ---
 

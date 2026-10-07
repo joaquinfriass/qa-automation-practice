@@ -13,8 +13,6 @@ Cada hilo es una aplicación que se prueba varias veces, con distintas herramien
 | H3 Compra web: UI | `saucedemo/` | SauceDemo | Playwright, Selenium con Java |
 | H4 Datos: SQL | `sql/` | Esquema espejo de la tienda | SQL |
 
-La carpeta `theory/` guarda los exámenes y las notas de estudio, un archivo por día.
-
 ## Registro de prácticas
 
 | Fecha | Hilo | Qué hice | Commit |
